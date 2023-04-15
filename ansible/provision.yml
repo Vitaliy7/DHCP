@@ -1,0 +1,6 @@
+- name: install and configure
+  hosts: all
+  become: yes
+ 
+  roles:
+  - pxeserver

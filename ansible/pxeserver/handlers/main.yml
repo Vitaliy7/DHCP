@@ -1,0 +1,13 @@
+---
+# handlers file for pxeserver
+  - name: restart httpd
+    service:
+      name: httpd
+      state: restarted
+      enabled: true
+      
+  - name: restart tftp-server
+    service:
+      name: tftp.service
+      state: restarted
+      enabled: true
